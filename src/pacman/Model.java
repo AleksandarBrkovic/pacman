@@ -69,12 +69,12 @@ public class Model extends JPanel implements ActionListener {
     
     
     private void loadImages() {
-    	down = new ImageIcon("/src/images/down.gif").getImage();
-    	up = new ImageIcon("/src/images/up.gif").getImage();
-    	left = new ImageIcon("/src/images/left.gif").getImage();
-    	right = new ImageIcon("/src/images/right.gif").getImage();
-        ghost = new ImageIcon("/src/images/ghost.gif").getImage();
-        heart = new ImageIcon("/src/images/heart.png").getImage();
+    	down = new ImageIcon("src/images/down.gif").getImage();
+    	up = new ImageIcon("src/images/up.gif").getImage();
+    	left = new ImageIcon("src/images/left.gif").getImage();
+    	right = new ImageIcon("src/images/right.gif").getImage();
+        ghost = new ImageIcon("src/images/ghost.gif").getImage();
+        heart = new ImageIcon("src/images/heart.png").getImage();
 
     }
        private void initVariables() {
@@ -89,7 +89,7 @@ public class Model extends JPanel implements ActionListener {
         dx = new int[4];
         dy = new int[4];
         
-        timer = new Timer(40, this);
+        timer = new Timer(100, this);
         timer.start();
     }
 
